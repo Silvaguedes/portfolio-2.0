@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+
+
+img {
+    width: 200px;
+}
+
+.interface {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+}
+
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #5a5a5a;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+
+header nav.menu-desktop a:hover {
+
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
+
+.contato button:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 0%;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #00ff08;
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #000000c0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    display: none;
+}
+
+
+.btn-abrir-menu img {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+section.topo-do-site {
+    padding: 40px 4;
+    margin-top: 5%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    width: 250px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+section.sobre {
+    margin-top: 10%;
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+
+
+}
+
+
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.txt-sobre p {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: justify;
+
+}
+
+.sobre img {
+    width: 250px;
+
+}
+
+section.portfolio {
+    margin-top: 20%;
+}
+
+
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+  
+}
+
+.imagem-1 {
+    position: relative;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+   
+}
+
+.overlayp {
+    padding: 8%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 300;
+    width: 82%;
+    height: 79%;
+    left: 22px;
+    top: 23.9px;
+    background-color: #070707fb;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlayp:hover{
+    opacity: 1;
+}
+
+
+.imagem-1 button {
+    border-radius: 20px;
+    font-weight: 600;
+    transition: .1s;
+  
+}
+
+.imagem-1 button a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.imagem-1 button:hover {
+    background-color: #dfd2d2a1;
+    color: #fff;
+}
+
+.imagem-1 button a:active {
+    color: #00ff08;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid #00ff08;
+}
+
+footer {
+    padding: 40Px 4%;
+    box-shadow: 0 0 40px 10px #ffffff18;
+}
+
+
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.line-footer.borda {
+    display: flex;
+    gap: 40px;
+
+}
+
+@media screen and (max-width: 1060px) {
+
+
+
+    .btn-abrir-menu img {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+    }
+
+
+
+    .flex {
+        flex-direction: column;
+    }
+
+
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse
+    }
+
+    .menu-desktop,
+    .contato {
+        display: none;
+    }
+
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .txt-topo-site p {
+        text-align: center;
+    }
+
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 32px;
+    }
+
+    section.sobre h2 {
+        text-align: center;
+
+    }
+
+    .sobre txt-sobre {
+        font-size: 34px;
+        font-weight: 35px;
+        text-align: center;
+    }
+
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+
+
+
+
+
+
+
+}
