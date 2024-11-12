@@ -236,11 +236,12 @@ section.portfolio {
 }
 
 
-.container {
-    padding: 40px;
+.container{
+    padding: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
     text-align: center;
     gap: 30px;
   
@@ -263,7 +264,7 @@ section.portfolio {
     font-size: 15px;
     font-weight: 300;
     width: 82%;
-    height: 73%;
+    height: 79%;
     left: 22px;
     top: 22px;
     background-color: #070707fb;
@@ -282,6 +283,8 @@ section.portfolio {
     border-radius: 20px;
     font-weight: 600;
     transition: .1s;
+    padding: 0 10px;
+
   
 }
 
