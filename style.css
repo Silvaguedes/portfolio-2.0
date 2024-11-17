@@ -317,20 +317,19 @@ footer .line-footer {
 }
 
 footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     padding: 40Px 4%;
     box-shadow: 0 0 40px 10px #ffffff18;
+    text-align: center;
 }
 
-
-
-footer .line-footer p a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .line-footer.borda {
-    display: flex;
+   width: 200vh;
     gap: 40px;
+  
 
 }
 
