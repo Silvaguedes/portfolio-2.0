@@ -236,15 +236,15 @@ section.portfolio {
 }
 
 
-.container{
+.container {
     padding: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     text-align: center;
     gap: 30px;
-  
+
 }
 
 .imagem-1 {
@@ -252,7 +252,7 @@ section.portfolio {
     padding: 20px;
     display: grid;
     gap: 10px;
-   
+
 }
 
 .overlayp {
@@ -274,7 +274,7 @@ section.portfolio {
 }
 
 
-.overlayp:hover{
+.overlayp:hover {
     opacity: 1;
 }
 
@@ -288,10 +288,10 @@ section.portfolio {
     transition: .1s;
     padding: 0 5px;
 
-  
+
 }
 
-.imagem-1 button a{
+.imagem-1 button a {
     text-decoration: none;
     color: #000;
 }
@@ -327,9 +327,8 @@ footer {
 
 
 .line-footer.borda {
-   width: 200vh;
+
     gap: 40px;
-  
 
 }
 
